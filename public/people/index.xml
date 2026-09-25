@@ -50,11 +50,51 @@
     </item>
     
     <item>
+      <title>B. Browuer MSc</title>
+      <link>http://localhost:1313/people/b-browuer-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/b-browuer-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>C. (Casper) van Elteren MSc</title>
       <link>http://localhost:1313/people/c-casper-van-elteren-msc/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/people/c-casper-van-elteren-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C. (Charles) Dupont MSc</title>
+      <link>http://localhost:1313/people/c-dupont-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/c-dupont-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C. (Chris) Hoynck van Papendrecht MSc</title>
+      <link>http://localhost:1313/people/c-hoynk-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/c-hoynk-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C. Farinelli MSc</title>
+      <link>http://localhost:1313/people/c-farinelli-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/c-farinelli-msc/</guid>
       <description></description>
       
     </item>
@@ -110,6 +150,16 @@
     </item>
     
     <item>
+      <title>dr. A. (Andrew) Edinger</title>
+      <link>http://localhost:1313/people/dr-a-edinger/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/dr-a-edinger/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>dr. B.V. (Ben) Meylahn</title>
       <link>http://localhost:1313/people/dr-b-v-ben-meylahn/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -155,6 +205,16 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/people/dr-g-giulia-pederzani/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>dr. J. (Jacques) Bara</title>
+      <link>http://localhost:1313/people/dr-j-bara/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/dr-j-bara/</guid>
       <description></description>
       
     </item>
@@ -255,6 +315,16 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/people/dr-t-tanzhe-tang/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>dr. T. (Tu-Ky) Ly</title>
+      <link>http://localhost:1313/people/dr-tu-ky/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/dr-tu-ky/</guid>
       <description></description>
       
     </item>
@@ -460,6 +530,16 @@
     </item>
     
     <item>
+      <title>L. (Layal) Tannous MSc</title>
+      <link>http://localhost:1313/people/l-tannous-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/people/l-tannous-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>L.W.A. (Laurens) Stuurman MSc</title>
       <link>http://localhost:1313/people/l-w-a-laurens-stuurman-msc/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -490,11 +570,11 @@
     </item>
     
     <item>
-      <title>M. (Matteo) Valle BSc</title>
-      <link>http://localhost:1313/people/m-matteo-valle-bsc/</link>
+      <title>M. (Matteo) Valle MSc</title>
+      <link>http://localhost:1313/people/m-valle-msc/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/people/m-matteo-valle-bsc/</guid>
+      <guid>http://localhost:1313/people/m-valle-msc/</guid>
       <description></description>
       
     </item>

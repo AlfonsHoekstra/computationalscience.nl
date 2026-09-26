@@ -131,9 +131,9 @@
           {{ end }}
           {{ end }}
           {{ if not (or $processedImage $image) }}
-          {{ $placeholderResource := resources.Get "place-holder.png" }}
+          {{ $placeholderResource := resources.Get "people/place-holder.png" }}
           {{ if $placeholderResource }}
-          {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
+            {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
           {{ end }}
           {{ end }}
           <a href="{{ .RelPermalink }}" class="block w-full h-full">

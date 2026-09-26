@@ -50,11 +50,21 @@
     </item>
     
     <item>
-      <title>B. Browuer MSc</title>
+      <title>B. (Benine) Browuer MSc</title>
       <link>https://example.org/people/b-browuer-msc/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://example.org/people/b-browuer-msc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C. (Carlotta) Farinelli MSc</title>
+      <link>https://example.org/people/c-farinelli-msc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/people/c-farinelli-msc/</guid>
       <description></description>
       
     </item>
@@ -85,16 +95,6 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://example.org/people/c-hoynk-msc/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>C. Farinelli MSc</title>
-      <link>https://example.org/people/c-farinelli-msc/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.org/people/c-farinelli-msc/</guid>
       <description></description>
       
     </item>

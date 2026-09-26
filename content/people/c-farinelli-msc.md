@@ -1,5 +1,5 @@
 +++
-title = "C. Farinelli MSc"
+title = "C. (Carlotta) Farinelli MSc"
 date = 2024-01-01
 draft = false
 description = "PhD student"

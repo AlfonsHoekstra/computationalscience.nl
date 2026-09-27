@@ -6,7 +6,7 @@ This directory contains individual markdown profiles for all Computational Scien
 
 ## How to Edit Your Profile
 
-1. Locate your file in this folder (e.g. `prof-dr-ir-w-wouter-huberts.md`).
+1. Locate your file in this folder (e.g. `dr-m-h-mike-lees.md`).
 2. Click the pencil icon on GitHub to edit directly, or edit locally with your favorite code editor.
 3. Make your changes in the **YAML front matter** block between the `---` delimiters.
 4. Commit your changes.
@@ -17,22 +17,22 @@ This directory contains individual markdown profiles for all Computational Scien
 
 ```yaml
 ---
-title: "prof. dr. ir. W. (Wouter) Huberts"
+title: "dr. M.H. (Mike) Lees"
 date: 2024-01-01
 draft: false
-description: "Assistant Professor"
-image: "img/people/w-huberts.jpg"
+description: "Group Leader & Associate Professor"
+image: "img/people/dr-m-h-mike-lees.jpg"
 group: "Faculty"
 active: true
-email: "w.huberts@uva.nl"
-website: "https://www.uva.nl/en/profile/h/u/w.huberts/w.huberts.html"
-seniority: 3
+email: "m.h.lees@uva.nl"
+website: "http://mhlees.com/"
+seniority: 1
 domain_keywords:
-  - "Computational Biomedicine"
+  - "Computational Social Science"
   - "Complex Systems"
 method_keywords:
+  - "Agent-Based Modeling (ABM)"
   - "Multi-Scale Simulation"
-  - "Data-Driven Modeling & AI"
 ---
 ```
 
@@ -40,7 +40,7 @@ method_keywords:
 
 ## Fields Reference
 
-- **`title`**: Full academic title and name (e.g., `"prof. dr. ir. W. (Wouter) Huberts"`).
+- **`title`**: Full academic title and name (e.g., `"dr. M.H. (Mike) Lees"`).
 - **`description`**: Your role (e.g., `"Assistant Professor"`, `"PhD student"`, `"Postdoctoral Researcher"`).
 - **`image`**: Photo path. Photos are located in [`../../assets/people/`](../../assets/people/). Reference format: `"img/people/<filename>.jpg"`.
 - **`group`**: Group section: `"Faculty"`, `"PhDs & Postdocs"`, or `"Other"`.

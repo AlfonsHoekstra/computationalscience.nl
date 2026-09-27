@@ -10,7 +10,7 @@ Each lab member has a profile markdown file located in:
 ```
 content/people/<your-name>.md
 ```
-For example: `content/people/prof-dr-ir-w-wouter-huberts.md`.
+For example: `content/people/dr-m-h-mike-lees.md`.
 
 You can edit your file directly on GitHub (using the pencil icon / web editor) or locally via git.
 
@@ -22,22 +22,22 @@ Profile files use standard **YAML front matter** enclosed between `---` delimite
 
 ```yaml
 ---
-title: "prof. dr. ir. W. (Wouter) Huberts"
+title: "dr. M.H. (Mike) Lees"
 date: 2024-01-01
 draft: false
-description: "Assistant Professor"
-image: "img/people/w-huberts.jpg"
+description: "Group Leader & Associate Professor"
+image: "img/people/dr-m-h-mike-lees.jpg"
 group: "Faculty"
 active: true
-email: "w.huberts@uva.nl"
-website: "https://www.uva.nl/en/profile/h/u/w.huberts/w.huberts.html"
-seniority: 3
+email: "m.h.lees@uva.nl"
+website: "http://mhlees.com/"
+seniority: 1
 domain_keywords:
-  - "Computational Biomedicine"
+  - "Computational Social Science"
   - "Complex Systems"
 method_keywords:
+  - "Agent-Based Modeling (ABM)"
   - "Multi-Scale Simulation"
-  - "Data-Driven Modeling & AI"
 ---
 ```
 
@@ -47,7 +47,7 @@ method_keywords:
 
 | Field | Type | Description |
 |---|---|---|
-| `title` | String | Your academic title and full name, e.g. `"prof. dr. ir. W. (Wouter) Huberts"` or `"A. (Alex) Gabel MSc"` |
+| `title` | String | Your academic title and full name, e.g. `"dr. M.H. (Mike) Lees"` or `"A. (Alex) Gabel MSc"` |
 | `description` | String | Your role or position in the lab, e.g. `"Full Professor"`, `"Associate Professor"`, `"Assistant Professor"`, `"PhD student"`, `"Postdoctoral Researcher"`, or `"Scientific Programmer"` |
 | `image` | String | Path to your photo, e.g. `"img/people/your-name.jpg"`. Photos are placed in [`assets/people/`](assets/people/) |
 | `group` | String | The section you appear under on the People page: `"Faculty"`, `"PhDs & Postdocs"`, or `"Other"` |

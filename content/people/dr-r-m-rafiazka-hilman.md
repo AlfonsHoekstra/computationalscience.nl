@@ -1,47 +1,17 @@
-+++
-title = "dr. R.M. (Rafiazka) Hilman"
-date = 2024-01-01
-draft = false
-description = "Postdoc"
-image = "img/people/dr-r-m-rafiazka-hilman.png"
-group = "PhDs & Postdocs"
-active = false
-email = ""
-website = ""
-# Seniority level used for ordering (1 = highest seniority / displayed first):
-# 1: Full Professor / Group Leader
-# 2: Associate Professor / Professor Emeritus
-# 3: Assistant Professor
-# 4: Other Faculty, Postdocs, PhD Students, Scientific Programmers / Support Staff
-seniority = 4
-
-# Domain keywords to choose from:
-# - "Computational Biomedicine"
-# - "Computational Social Science"
-# - "Sustainability & Ecology"
-# - "Urban Dynamics"
-# - "Computational Chemistry"
-# - "Economics"
-# - "Quantitative Finance"
-# - "Materials Science"
-# - "Computational Physics"
-# - "Complex Systems"
-# - "Computational Psychology"
-domain_keywords = ["Computational Psychology", "Urban Dynamics"]
-
-# Method keywords to choose from:
-# - "Complex Systems Modeling"
-# - "Multi-Scale Simulation"
-# - "Network Science"
-# - "Agent-Based Modeling (ABM)"
-# - "Digital Twins"
-# - "Data-Driven Modeling & AI"
-# - "Information Theory"
-# - "System Dynamics & Causal Modeling"
-# - "High-Performance Computing (HPC)"
-# - "Scientific Machine Learning (SciML)"
-# - "Quantum Computing"
-# - "Game Theory"
-method_keywords = ["Complex Systems Modeling"]
-+++
-
+---
+title: "dr. R.M. (Rafiazka) Hilman"
+date: 2024-01-01
+draft: false
+description: "Postdoc"
+image: "img/people/dr-r-m-rafiazka-hilman.png"
+group: "PhDs & Postdocs"
+active: false
+email: ""
+website: ""
+seniority: 4
+domain_keywords:
+  - "Computational Psychology"
+  - "Urban Dynamics"
+method_keywords:
+  - "Complex Systems Modeling"
+---

@@ -2,6 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Computational Science Lab'
 
+ignoreFiles = ['README\.md$']
+
 # --- 1. THEME SELECTION ---
 theme = "blowfish"
 

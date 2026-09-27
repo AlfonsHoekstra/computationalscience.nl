@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alumni on Computational Science Lab</title>
-    <link>http://localhost:58703/alumni/</link>
+    <link>https://example.org/alumni/</link>
     <description>Recent content in Alumni on Computational Science Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 </copyright>
-    <atom:link href="http://localhost:58703/alumni/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/alumni/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

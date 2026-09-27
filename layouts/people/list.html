@@ -23,77 +23,14 @@
         <h2 class="text-2xl font-bold mb-6 text-neutral-800 dark:text-neutral-200 border-b border-neutral-200 dark:border-neutral-700 pb-2">{{ $group }}</h2>
         <style>
           @media (min-width: 1268px) {
-            #people-grid {
+            .people-grid {
               grid-template-columns: repeat(4, minmax(0, 1fr));
             }
           }
         </style>
-        <div id="people-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div class="people-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {{ range $groupPages }}
-            <div class="flex flex-col items-center text-center mb-5">
-              <div class="relative w-40 h-40 mb-2 shrink-0 aspect-square">
-                {{ $image := .Params.image }}
-                {{ $processedImage := "" }}
-                
-                {{/* Try to resolve image as a resource in assets/ */}}
-                {{ if $image }}
-                  {{/* Remove "img/" prefix if present to match assets structure */}}
-                  {{ $imagePath := strings.TrimPrefix "img/" $image }}
-                  {{ $resource := resources.Get $imagePath }}
-                  
-                  {{ if $resource }}
-                    {{/* Crop to square */}}
-                    {{ $processedImage = $resource.Fill "300x300 Center" }}
-                  {{ else }}
-                    {{/* Fallback: try finding it directly if path was relative or different */}}
-                    {{ $resource = resources.Get $image }}
-                    {{ if $resource }}
-                      {{ $processedImage = $resource.Fill "300x300 Center" }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-
-                {{/* If no image found, use placeholder */}}
-                {{ if not (or $processedImage $image) }}
-                  {{ $placeholderResource := resources.Get "people/place-holder.png" }}
-                  {{ if $placeholderResource }}
-                    {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
-                  {{ end }}
-                {{ end }}
-
-                <a href="{{ .RelPermalink }}" class="block w-full h-full">
-                {{ if $processedImage }}
-                  <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
-                {{ else if $image }}
-                  <img src="{{ $image | relURL }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
-                {{ else }}
-                  <div class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400 transition hover:ring-4 hover:ring-primary-300">
-                    <span class="text-4xl">?</span>
-                  </div>
-                {{ end }}
-                </a>
-              </div>
-              
-              <h3 class="text-sm font-bold text-neutral-900 dark:text-neutral-100 leading-tight ">
-                <a href="{{ .RelPermalink }}" class="hover:text-primary-600 transition-colors">{{ .Title }}</a>
-              </h3>
-              
-              <p class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">{{ .Params.description }}</p>
-              
-              <div class="flex flex-col gap-1 text-xs">
-                <!-- {{ if .Params.email }}
-                  <a href="mailto:{{ .Params.email }}" class="text-primary-600 hover:underline flex items-center justify-center gap-1">
-                    {{ .Params.email }}
-                  </a>
-                {{ end }}
-                -->
-                {{ if .Params.website }}
-                  <a href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">
-                    Personal Website
-                  </a>
-                {{ end }}
-              </div>
-            </div>
+            {{ partial "person-card.html" . }}
           {{ end }}
         </div>
       </section>
@@ -101,71 +38,16 @@
   {{ end }}
 
   {{ if gt (len $alumniPages) 0 }}
-  <section class="mb-12">
-    <h2
-      class="text-2xl font-bold mb-6 text-neutral-800 dark:text-neutral-200 border-b border-neutral-200 dark:border-neutral-700 pb-2">
-      Alumni</h2>
-    <style>
-      @media (min-width: 1268px) {
-        #alumni-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-      }
-    </style>
-    <div id="alumni-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-      {{ range $alumniPages.ByTitle }}
-      <div class="flex flex-col items-center text-center mb-5">
-        <div class="relative w-40 h-40 mb-2 shrink-0 aspect-square">
-          {{ $image := .Params.image }}
-          {{ $processedImage := "" }}
-          {{ if $image }}
-          {{ $imagePath := strings.TrimPrefix "img/" $image }}
-          {{ $resource := resources.Get $imagePath }}
-          {{ if $resource }}
-          {{ $processedImage = $resource.Fill "300x300 Center" }}
-          {{ else }}
-          {{ $resource = resources.Get $image }}
-          {{ if $resource }}
-          {{ $processedImage = $resource.Fill "300x300 Center" }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-          {{ if not (or $processedImage $image) }}
-          {{ $placeholderResource := resources.Get "people/place-holder.png" }}
-          {{ if $placeholderResource }}
-            {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
-          {{ end }}
-          {{ end }}
-          <a href="{{ .RelPermalink }}" class="block w-full h-full">
-          {{ if $processedImage }}
-          <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}"
-            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
-          {{ else if $image }}
-          <img src="{{ $image | relURL }}" alt="{{ .Title }}"
-            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
-          {{ else }}
-          <div
-            class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400 transition hover:ring-4 hover:ring-primary-300">
-            <span class="text-4xl">?</span>
-          </div>
-          {{ end }}
-          </a>
-        </div>
-        <h3 class="text-sm font-bold text-neutral-900 dark:text-neutral-100 leading-tight ">
-          <a href="{{ .RelPermalink }}" class="hover:text-primary-600 transition-colors">{{ .Title }}</a>
-        </h3>
-        <p class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">{{ .Params.description }}</p>
-        <div class="flex flex-col gap-1 text-xs">
-          {{ if .Params.website }}
-          <a href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer"
-            class="text-primary-600 hover:underline">
-            Personal Website
-          </a>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-    </div>
+  <section class="mt-16 mb-12 pt-8 border-t border-neutral-200 dark:border-neutral-700 flex flex-col items-center justify-center text-center">
+    <h2 class="text-2xl font-bold mb-2 text-neutral-800 dark:text-neutral-200">Alumni</h2>
+    <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-5 max-w-md">
+      Looking for former lab members, PhD graduates, and researchers?
+    </p>
+    <a href="{{ with site.GetPage "alumni" }}{{ .RelPermalink }}{{ else }}{{ "alumni/" | relURL }}{{ end }}"
+       class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-neutral-700 bg-neutral-100/80 hover:bg-neutral-200 rounded-lg transition-colors dark:text-neutral-300 dark:bg-neutral-800/80 dark:hover:bg-neutral-700 shadow-sm border border-neutral-200 dark:border-neutral-700 backdrop-blur-sm hover:text-primary-600 dark:hover:text-primary-400">
+      <span>View Alumni</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
   </section>
   {{ end }}
 

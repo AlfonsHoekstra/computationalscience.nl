@@ -11,6 +11,12 @@ layout: "Hero"
   {{< figure src="main/logo-dark.png" class="home-logo mx-auto block" >}}
 </div>
 
+<p class="text-center text-base md:text-lg font-medium text-neutral-500 dark:text-neutral-400 -mt-2 mb-8">
+  <a href="https://ivi.uva.nl/" target="_blank" rel="noopener noreferrer" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 underline decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-primary-500 dark:hover:decoration-primary-400 underline-offset-4 transition-colors">Informatics Institute</a>
+  <span class="mx-2 text-neutral-400 dark:text-neutral-500">&middot;</span>
+  <a href="https://www.uva.nl/en" target="_blank" rel="noopener noreferrer" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 underline decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-primary-500 dark:hover:decoration-primary-400 underline-offset-4 transition-colors">University of Amsterdam</a>
+</p>
+
 # Group Vision
 
 <p class="text-2xl font-sans italic mb-6 text-center">Our world is a complex system. Navigating its complexity requires computational modelling.</p> 

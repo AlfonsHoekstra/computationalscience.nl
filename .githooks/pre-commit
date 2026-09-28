@@ -1,0 +1,20 @@
+#!/bin/sh
+# Automatically update README.md keywords when a commit happens
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+if [ -f "$REPO_ROOT/scripts/update_readme_keywords.py" ]; then
+    python3 "$REPO_ROOT/scripts/update_readme_keywords.py"
+    if [ $? -eq 0 ]; then
+        # If README.md was modified, stage it so it's included in this commit
+        if ! git diff --quiet README.md; then
+            git add "$REPO_ROOT/README.md"
+            echo "Auto-staged updated README.md with latest keywords."
+        fi
+    else
+        echo "Error: Failed to update README.md keywords." >&2
+        exit 1
+    fi
+fi
+
+exit 0

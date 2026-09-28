@@ -17,16 +17,15 @@ layout: "Hero"
   <a href="https://www.uva.nl/en" target="_blank" rel="noopener noreferrer" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 underline decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-primary-500 dark:hover:decoration-primary-400 underline-offset-4 transition-colors">University of Amsterdam</a>
 </p>
 
-# Group Vision
+<!-- # Group Vision -->
 
-<p class="text-2xl font-sans italic mb-6 text-center">Our world is a complex system. Navigating its complexity requires computational modelling.</p> 
+<p class="text-2xl font-sans italic mb-8 text-center">Our world is a complex system. Navigating its complexity requires computational modelling.</p> 
 
-## Group Mission
+<!-- ## Group Mission -->
 
-Our mission is to drive positive change by developing credible computational models of complex phenomena. We perform computer simulations to deepen our understanding of the complex systems underpinning these phenomena, allowing us to anticipate their future behaviour and identify the changes needed to improve our world and help people and societies thrive. 
+<p class="text-1xl font-sans mb-2 text-justify">Our mission is to drive positive change by developing credible computational models of complex phenomena. We perform computer simulations to deepen our understanding of the complex systems underpinning these phenomena, allowing us to anticipate their future behaviour and identify the changes needed to improve our world and help people and societies thrive. 
 
-We translate these insights into actionable models within critical domains such as health, sustainability, climate change, and socio-economic-technical systems. By actively developing and deploying these models in close partnership with key stakeholders, we ensure our work drives tangible, real-world impact. Beyond direct application, we advance the frontiers of Computational Science, Complexity Science, and Informatics to pioneer modelling and simulation methodologies
-
+We translate these insights into actionable models within critical domains such as health, sustainability, climate change, and socio-economic-technical systems. By actively developing and deploying these models in close partnership with key stakeholders, we ensure our work drives tangible, real-world impact. Beyond direct application, we advance the frontiers of Computational Science, Complexity Science, and Informatics to pioneer modelling and simulation methodologies</p>
 
 ## News
 

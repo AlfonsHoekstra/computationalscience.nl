@@ -12,7 +12,26 @@ content/people/<your-name>.md
 ```
 For example: `content/people/dr-m-h-mike-lees.md`.
 
-You can edit your file directly on GitHub (using the pencil icon / web editor) or locally via git.
+### How to Edit on GitHub (Recommended)
+
+You can edit your profile directly in your browser without installing anything locally:
+
+1. **Start from the main repository**:  
+   Navigate to the [`content/people/`](content/people/) directory.
+2. **Open your file**:  
+   Click on your profile markdown file (e.g. `dr-m-h-mike-lees.md`).
+3. **Click the Edit button** (the pencil icon in the top-right corner):
+   - GitHub will show: *"You need to fork this repository to propose changes."*
+   - Click the green **"Fork this repository"** button. This creates your personal editing workspace on GitHub.
+4. **Make your updates**:  
+   Edit your position description, keywords, links, or bio text below the front matter.
+5. **Propose your changes**:  
+   Click **"Commit changes..."** in the top-right, and select **"Propose changes"**.
+6. **Submit a Pull Request**:  
+   Click **"Create pull request"**. A lab maintainer will review and merge it, and the website will automatically deploy via GitHub Actions.
+
+> [!TIP]
+> **Editing again in the future**: Always start from the main repository link above. If GitHub ever displays a message on your fork saying your branch is behind `master`, simply click **"Sync fork"** &rarr; **"Update branch"** before editing. Alternatively, you can edit locally via `git clone` if you prefer working in a terminal or code editor.
 
 ---
 

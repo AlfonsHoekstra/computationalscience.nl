@@ -1,11 +1,15 @@
 Computational Biomedicine 
+Computational Biology
 Computational Social Science 
-Sustainability & Ecology
-Urban Dynamics 
+Computational Sustainability 
+Computational Ecology
 Computational Chemistry
-Economics
-Quantitative Finance 
-Materials Science
+Computational Economics
+Computational Finance 
+Computational Materials Science
+Computational Physics
+Computational Health 
+Computational Neuroscience
+Computational Psychology
 Computational Physics
 Complex Systems
-Computational Psychology

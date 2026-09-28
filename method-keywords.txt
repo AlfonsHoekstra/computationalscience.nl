@@ -1,4 +1,3 @@
-Complex Systems Modeling
 Multi-Scale Simulation 
 Network Science 
 Agent-Based Modeling (ABM)  
@@ -10,3 +9,5 @@ High-Performance Computing (HPC)
 Scientific Machine Learning (SciML)
 Quantum Computing
 Game Theory
+Credibility & Verification
+Scientific Visualisation

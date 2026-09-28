@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-6 sm:px-14 md:px-24 lg:px-32">
+<div class="w-full">
   <header class="mb-10">
     <!-- <h1 class="text-3xl font-extrabold text-neutral-900 dark:text-neutral-100">{{ .Title }}</h1> -->
     <div class="mt-4 text-neutral-700 dark:text-neutral-300">{{ .Content }}</div>
@@ -22,13 +22,18 @@
       <section class="mb-12">
         <h2 class="text-2xl font-bold mb-6 text-neutral-800 dark:text-neutral-200 border-b border-neutral-200 dark:border-neutral-700 pb-2">{{ $group }}</h2>
         <style>
-          @media (min-width: 1268px) {
+          @media (min-width: 1200px) {
             .people-grid {
               grid-template-columns: repeat(4, minmax(0, 1fr));
             }
           }
+          @media (min-width: 1600px) {
+            .people-grid {
+              grid-template-columns: repeat(5, minmax(0, 1fr));
+            }
+          }
         </style>
-        <div class="people-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div class="people-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {{ range $groupPages }}
             {{ partial "person-card.html" . }}
           {{ end }}
@@ -44,7 +49,8 @@
       Looking for former lab members, PhD graduates, and researchers?
     </p>
     <a href="{{ with site.GetPage "alumni" }}{{ .RelPermalink }}{{ else }}{{ "alumni/" | relURL }}{{ end }}"
-       class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-neutral-700 bg-neutral-100/80 hover:bg-neutral-200 rounded-lg transition-colors dark:text-neutral-300 dark:bg-neutral-800/80 dark:hover:bg-neutral-700 shadow-sm border border-neutral-200 dark:border-neutral-700 backdrop-blur-sm hover:text-primary-600 dark:hover:text-primary-400">
+       class="inline-flex items-center justify-center gap-3 px-6 py-3 text-base font-semibold text-neutral-700 bg-neutral-100 hover:bg-neutral-200 rounded-full transition-all dark:text-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 shadow-sm border border-neutral-300 dark:border-neutral-600 hover:text-primary-600 dark:hover:text-primary-400"
+       style="padding: 0.75rem 1.75rem;">
       <span>View Alumni</span>
       <span aria-hidden="true">&rarr;</span>
     </a>

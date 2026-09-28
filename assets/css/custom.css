@@ -4,6 +4,41 @@
     padding-top: 5rem;
 }
 
+/* Widen site-wide container for desktop while maintaining fluid auto-resizing */
+:root {
+    --container-7xl: 78rem; /* ~1560px on desktop with 1.25 scale */
+}
+
+/* Increase overall font size by ~25% on web / desktop view only */
+@media (min-width: 1024px) {
+    html {
+        font-size: 125%; /* 16px -> 20px (+25%) */
+    }
+}
+
+/* Apply wider container and balanced padding to body and fixed header */
+body.max-w-7xl,
+.header-spacer + div > div.max-w-7xl {
+    max-width: var(--container-7xl) !important;
+}
+
+@media (min-width: 1024px) {
+    body.max-w-7xl,
+    .header-spacer + div > div.max-w-7xl {
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    body.max-w-7xl,
+    .header-spacer + div > div.max-w-7xl {
+        padding-left: 3.5rem !important;
+        padding-right: 3.5rem !important;
+    }
+}
+
+
 /* Force-hide the skip-link element entirely */
 a[href="#main-content"] {
     display: none !important;
@@ -15,7 +50,7 @@ a[href="#main-content"] {
 }
 
 .header-spacer {
-    min-height: 80px !important; /* Set exactly what you want here */
+    min-height: 5rem !important; /* 80px on mobile (16px root), 100px on desktop (20px root) */
 }
 
 /* Education cards: make figure shortcode fill the image container */

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-6 sm:px-14 md:px-24 lg:px-32">
+<div class="w-full">
   <div class="pt-6 pb-2">
     <a href="{{ with site.GetPage "people" }}{{ .RelPermalink }}{{ else }}{{ "people/" | relURL }}{{ end }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
       <span aria-hidden="true">&larr;</span> Back to People
@@ -19,9 +19,14 @@
   {{ $alumniPages := where site.RegularPages "Params.active" false }}
 
   <style>
-    @media (min-width: 1268px) {
+    @media (min-width: 1200px) {
       .people-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 1600px) {
+      .people-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
       }
     }
   </style>

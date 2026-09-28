@@ -67,20 +67,22 @@ To maintain consistency across all profiles, please select your keywords from th
 #### 1. Domain Keywords
 Full list is in [`domain-keywords.txt`](domain-keywords.txt):
 - `Computational Biomedicine`
+- `Computational Biology`
 - `Computational Social Science`
-- `Sustainability & Ecology`
-- `Urban Dynamics`
+- `Computational Sustainability`
+- `Computational Ecology`
 - `Computational Chemistry`
-- `Economics`
-- `Quantitative Finance`
-- `Materials Science`
+- `Computational Economics`
+- `Computational Finance`
+- `Computational Materials Science`
 - `Computational Physics`
-- `Complex Systems`
+- `Computational Health`
+- `Computational Neuroscience`
 - `Computational Psychology`
+- `Complex Systems`
 
 #### 2. Method Keywords
 Full list is in [`method-keywords.txt`](method-keywords.txt):
-- `Complex Systems Modeling`
 - `Multi-Scale Simulation`
 - `Network Science`
 - `Agent-Based Modeling (ABM)`
@@ -92,6 +94,8 @@ Full list is in [`method-keywords.txt`](method-keywords.txt):
 - `Scientific Machine Learning (SciML)`
 - `Quantum Computing`
 - `Game Theory`
+- `Credibility & Verification`
+- `Scientific Visualisation`
 
 #### How to Format Keywords in YAML
 
